@@ -1,0 +1,47 @@
+.main{
+    margin-bottom: 5%;
+
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+}
+footer {
+    
+   
+    bottom:0;
+    clear:both;
+    width:100%;
+
+}
+.Logo{
+    width:100px;
+    height:50px;
+}
+
+.fas3{
+    background-color: whitesmoke;
+    height:500px;
+}
+.boton1{
+    width:100%;
+}
+.boton2{
+    width:100%;
+}
+.form-princ form {
+
+    display: flex;
+    width: 400%;
+}
+.form-princ form .pagina{
+    width: 25%;
+}
+.container .form-princ{
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
+
