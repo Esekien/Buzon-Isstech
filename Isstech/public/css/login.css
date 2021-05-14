@@ -1,0 +1,20 @@
+/*CSS PARA EL BODY DE LOGIN*/
+body{ 
+  background: #ffe259;
+  background: linear-gradient(to right, #ffffff,#b1aea1);
+}
+.bg{ 
+  background-image: url(../imagenes/InstalacionesISSTECH.jpg);
+  background-position: center left;
+  padding-bottom: 550px;
+}
+
+/*CSS PARA el logo en  EL LOGIN*/
+.logo-bienvenido{
+  margin-bottom:  -30px;
+}
+
+/*CSS DEL BOTON DE INICIAR SESION*/
+.d-grid .bt1{
+  background: #1b1b19;
+}

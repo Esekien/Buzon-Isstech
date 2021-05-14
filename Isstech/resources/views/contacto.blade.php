@@ -6,76 +6,78 @@
 
 
 <br>
-<div class=" container">
+<div class="main-contacto container">
   <div class="row">
     <div class="fas3 col-md-4 text-center animate-box">
       <div class="services">
         <span class="icon">
           <img src="{{URL::asset('/imagenes/derechohabiente.png')}}" alt="">
         </span>
-        <div >
+        <div>
           <h3>Derechohabiente</h3>
-          <p>Envia tu queja, sugerencia o felicitacion mediante tu CLIP para tener un seguimiento de lo enviado.</p>
+          
+          <p>Envía tu queja, sugerencia o felicitación mediante tu CLIP para tener un seguimiento de lo enviado.</p>
           <!-- FALTA REDIRIGIR LAS RUTAS -->
-          <a href="{{route('contacto.derechohabiente')}}" class="color btn btn-dark" role="button" >Enviar</a>
+          <a href="{{route('contacto.derechohabiente')}}" class="color btn btn-dark" role="button">Enviar</a>
         </div>
       </div>
     </div>
     <div class="col-md-4 text-center animate-box">
       <div class="services">
         <span class="icon">
-        <img src="{{URL::asset('/imagenes/noderechohabiente.png')}}" alt="">
+          <img src="{{URL::asset('/imagenes/noderechohabiente.png')}}" alt="">
         </span>
         <div>
           <h3>No derechohabiente</h3>
-          <p>Envia tu queja, sugerencia o felicitacion con tus datos personales para tener un seguimiento de lo enviado.</p>
           
-          <a href="{{route('contacto.noderechohabiente')}}" class="color btn btn-dark" role="button" >Enviar</a>
+          <p>Envía tu queja, sugerencia o felicitación con tus datos personales para tener un seguimiento de lo enviado.</p>
+
+          <a href="{{route('contacto.noderechohabiente')}}" class="color btn btn-dark" role="button">Enviar</a>
         </div>
       </div>
     </div>
     <div class="fas3 col-md-4 text-center animate-box">
       <div class="services">
         <span class="icon">
-        <img src="{{URL::asset('/imagenes/anonimo.png')}}" alt="">
+          <img src="{{URL::asset('/imagenes/anonimo.png')}}" alt="">
         </span>
         <div>
           <h3>Anonimo</h3>
-          <p>Envia tu queja, sugerencia o felicitacion de manera anonima sin embargo no podras tener un seguimiento de lo enviado.</p>
-          <a href="{{route('contacto.anonimo')}}" class="color btn btn-dark" role="button" >Enviar</a>
+          <p>Envía tu queja, sugerencia o felicitación de manera anónima sin embargo no podrás tener un seguimiento de lo enviado</p>
+          <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Enviar
+          </button>
+          
         </div>
+
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">¿Está seguro?</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Si realiza una queja, sugerencia o felicitación anónimamente no se le podrá informar el seguimiento realizado.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <a href="{{route('contacto.anonimo')}}" class="color btn btn-dark" role="button">Enviar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
       </div>
     </div>
   </div>
+</div>
 
 
-
-
-
-
-  <!-- <div class="container">
-    <table class="table table-striped ">
-      <thead class="thead-dark">
-        <tr>
-          <th scope="col">Id</th>
-          <th scope="col">Nombre</th>
-          <th scope="col">Apellido paterno</th>
-          <th scope="col">Apellido materno</th>
-        </tr>
-      </thead>
-      <tbody>
-        @foreach($clip as $item)
-        <tr>
-          <th scope="row">{{$item->id}}</th>
-          <td>{{$item->nombre}}</td>
-          <td>{{$item->apellido_paterno}}</td>
-          <td>{{$item->apellido_materno}}</td>
-        </tr>
-        @endforeach()
-      </tbody>
-    </table>
-  </div> -->
-
-  @endsection()
-
-  @extends('elements.footer')
+@endsection()

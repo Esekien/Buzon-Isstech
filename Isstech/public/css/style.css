@@ -1,46 +1,57 @@
+
+/*CSS PARA EL MAIN DE LA PAGINA DE CONTACTO*/
+.main-contacto{
+    margin-bottom: 5%;
+}
+/*CSS PARA EL MAIN DE LA PAGINA DE FORMCONTACTO*/
 .main{
     margin-bottom: 5%;
 
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-
 }
+/*CSS PARA EL FOOTER*/
 footer {
-    
-   
+    /*LE QUITARE EL FIXED*/
+    position: fixed;
     bottom:0;
     clear:both;
     width:100%;
 
 }
+/*CSS PARA EL LOGO DEL NAVBAR*/
 .Logo{
     width:100px;
     height:50px;
 }
-
+/*CSS PARA LOS CONTENEDORES DEL MAIN*/
 .fas3{
     background-color: whitesmoke;
     height:500px;
 }
+/*CSS PARA LOS BOTONES*/
 .boton1{
     width:100%;
 }
 .boton2{
     width:100%;
+    margin-bottom: 10px;
 }
-.form-princ form {
+.boton3{
+    width:100%;
+}
 
-    display: flex;
-    width: 400%;
+.navbar{
+    background-color: #18191a;
+    /*333333*/
+    
 }
-.form-princ form .pagina{
-    width: 25%;
+.left-navbar{
+    background-color: #424158;
 }
-.container .form-princ{
-    width: 100%;
-    overflow: hidden;
-}
+
+
 
 
 

@@ -1,0 +1,82 @@
+
+@media(min-width:768px) {
+
+    /*html, body, #wrapper, #page-wrapper {height: 100%; overflow: hidden;}*/
+}
+body{ 
+    background: #f1f6f9;
+   
+  }
+
+.left-navbar{
+    background-color:#6E7E90;
+}
+.alal{
+    color: white;
+    font-size: larger;
+}
+
+.menu-sidebar {
+    width: 300px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: #18386B;
+    /*background: #0d7cdd;  #18386B #002663;*/
+    overflow-y: auto;
+}
+
+.navbar-sidebar {
+    padding: 35px;
+    padding-bottom: 0;
+}
+
+.logo-sidebar{
+    margin-left: 50px;
+    margin-top: 15px;
+    
+}
+.menu-sidebar__content{
+    font-size: larger;
+}
+.icon{
+    margin-right: 10px;
+}
+
+.titulo1{
+    width: 300px;
+    color: white;
+}
+
+/*tabla*/
+
+
+table {
+
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+
+    position: relative;
+  }
+
+
+  table thead tr {
+    height: 60px;
+    background: #1b1b19;
+  }
+.columnas{
+    color: white;
+}
+
+
+h5{
+    margin-left: 15px;
+}
+
+.dataTabletd{
+    color: black;
+}
+
+
+

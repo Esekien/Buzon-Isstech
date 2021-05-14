@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateQuejaSugerenciasTable extends Migration
+class CreateNoDerechohabientesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,11 @@ class CreateQuejaSugerenciasTable extends Migration
      */
     public function up()
     {
-        Schema::create('queja_sugerencias', function (Blueprint $table) {
+        Schema::create('no_derechohabientes', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->timestamps();
+            $table->string('nombre');
+            $table->string('apellido_paterno');
+            $table->string('apellido_materno');
         });
     }
 
@@ -26,6 +28,6 @@ class CreateQuejaSugerenciasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('queja_sugerencias');
+        Schema::dropIfExists('no_derechohabientes');
     }
 }
